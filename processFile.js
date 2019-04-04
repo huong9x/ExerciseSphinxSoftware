@@ -18,15 +18,19 @@ function writeFile(filePath, data) {
           if (err) {
               reject(err)
           } else {
-              resolve();
+              resolve(data);
           }
       });
   })
 }
+function write(filePath, contentToWrite) {
+  readFile(filePath).then((data) => {
+    data+=' ' + contentToWrite;
+    return writeFile(filePath,data)
+  }).catch((err) => {
+    console.log(err)
+  })
+}
 
-readFile('text.txt').then((contentToWrite) => {
-  contentToWrite+=" len noc nha";
-  return writeFile('text.txt',contentToWrite);
-}).then(function(){
-  console.log('Saved change!');
-})
+write('text.txt', 'World');
+
