@@ -1,0 +1,23 @@
+{
+  "name": "exercisesphinxsoftware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculatorv2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huong9x/ExerciseSphinxSoftware.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huong9x/ExerciseSphinxSoftware/issues"
+  },
+  "homepage": "https://github.com/huong9x/ExerciseSphinxSoftware#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  }
+}
