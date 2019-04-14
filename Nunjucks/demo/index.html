@@ -3,6 +3,13 @@
         <title></title>
     </head>
     <body>
-        Hello {{ name}}        
+    <h1>Search Results:</h1>
+    <ul>
+        {% for item in items %}
+        <li>ID {{ item.id }}, Name: {{ item.user }}</li>
+        {% else %}
+        <li>No record found!</li>
+        {% endfor %}
+    </ul> 
     </body>
 </html>
